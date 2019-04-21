@@ -409,7 +409,7 @@ while((respStringLen = recvfrom(sock, echoBuffer, ECHOMAX, 0,
       {
         printf("\n\nPeriodically sends out the Distance Vector\n\n");
         d = distance_vector_from_routing_table();
-        printf("%d")
+        printf("%d");
         sendToNeighbors(d);
         alarm(TIMEOUT_SECS);
       }
